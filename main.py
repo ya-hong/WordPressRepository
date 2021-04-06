@@ -44,10 +44,10 @@ url_info = urlparse(xmlrpc_php)
 
 domain_name = url_info.netloc
 
-from xmlrpc.client import Transport
+from xmlrpc.client import SafeTransport
 
 
-class SpecialTransport(Transport):
+class SpecialTransport(SafeTransport):
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
 
 wp = Client(xmlrpc_php, username, password, transport=SpecialTransport())
