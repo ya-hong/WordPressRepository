@@ -8,6 +8,8 @@ from hashlib import md5, sha1
 import json
 import markdown
 import re
+from markdown_math_escape import MathEscapeExtension
+
 
 config_file_txt = ""
 
@@ -231,6 +233,7 @@ def insert_index_info_in_readme():
 
     return True
 
+
 def main():
     # 1. 获取网站数据库中已有的文章列表
     post_link_id_list = get_posts()
@@ -269,11 +272,8 @@ def main():
                 extensions=[
                     'tables', 
                     'fenced_code', 
-                    'mdx_math'
                 ],
-                extension_configs={
-                    'mdx_math': {'enable_dollar_delimiter': True}
-                }
+                MathEscapeExtension(delimiters="dollers"),
             )
             # 如果文章无id,则直接新建
             if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):

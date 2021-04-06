@@ -17,7 +17,7 @@ jobs:
           pip install markdown
           pip install python-wordpress-xmlrpc
           pip install python-frontmatter
-          pip install python-markdown-math
+          pip install markdown_math_escape
       - name: Build
         env:
             USERNAME: ${{ secrets.USERNAME }}
