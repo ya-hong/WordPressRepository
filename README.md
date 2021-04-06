@@ -4,6 +4,8 @@
 ## 目录(2021年04月06日更新)
 [](https://yanghong.tinyweb.blog/p/test/)
 
+[](https://yanghong.tinyweb.blog/p/math/)
+
 [zhaoolee的Github主页](https://yanghong.tinyweb.blog/p/2020-01-17-zhaoolee/)
 
 ---end---
