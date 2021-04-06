@@ -8,6 +8,16 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2 # Checking out the repo
+      - name: Cache pip
+        uses: actions/cache@v2
+        with:
+          # This path is specific to Ubuntu
+          path: ~/.cache/pip
+          # Look to see if there is a cache hit for the corresponding requirements file
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
       - name: Install dependecies
         uses: VaultVulp/action-pipenv@v2.0.1
         with:
