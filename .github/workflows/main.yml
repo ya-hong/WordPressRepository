@@ -14,8 +14,9 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          pip install pipenv
-          pipenv install
+          pip install markdown
+          pip install python-wordpress-xmlrpc
+          pip install python-frontmatter
       - name: Build
         env:
             USERNAME: ${{ secrets.USERNAME }}
