@@ -1,82 +1,10 @@
 # 方圆小站Github仓库
 
 ---start---
-## 目录(2021年04月04日更新)
-[假期从深圳到长沙玩，忽然不想奋斗了](https://fangyuanxiaozhan.com/p/2021-04-04-changsha/)
+## 目录(2021年04月06日更新)
+[](https://yanghong.tinyweb.blog/p/test/)
 
-[在深圳某社康接种新冠疫苗的经历](https://fangyuanxiaozhan.com/p/2021-04-01-miao/)
-
-[换个思路, 把简书当知识便签来用，能省很多时间，还能打造个人IP，积累粉丝](https://fangyuanxiaozhan.com/p/2021-03-28-note/)
-
-[如何用简书打造自媒体影响力？简书生态烂，水文多，但支持md免费全平台笔记就剩它了(无奈脸)](https://fangyuanxiaozhan.com/p/2021-03-28-jianshu/)
-
-[编程语言很流行，并不是因为它很优秀，而是因为它很简单](https://fangyuanxiaozhan.com/p/2021-03-26-code/)
-
-[摄影是一门接地气的混合艺术](https://fangyuanxiaozhan.com/p/2021-03-26-camera/)
-
-[一加8 线刷官方ColorOS尝鲜版遇到的各种问题及解决方案](https://fangyuanxiaozhan.com/p/2021-03-25-oneplus-coloros/)
-
-[等90后00后老了，如何忽悠TA们?](https://fangyuanxiaozhan.com/p/2021-03-23-9000-money/)
-
-[游戏厂商与玩家之间的矛盾](https://fangyuanxiaozhan.com/p/2021-03-21-game-player/)
-
-[完美远程办公网络配置的研究（支持无缝使用内网服务，高速魔法上网）](https://fangyuanxiaozhan.com/p/2021-03-18-work-net/)
-
-[荒野之息和原神让我打开新世界，顺便入手了Xbox手柄和NS Pro喷射战士手柄](https://fangyuanxiaozhan.com/p/2021-03-17-ns-xbox/)
-
-[Github可白嫖的Pages和Actions有什么用?](https://fangyuanxiaozhan.com/p/2021-03-15-github/)
-
-[《原神》手残玩家如何获得紧张刺激的游戏体验?](https://fangyuanxiaozhan.com/p/2021-03-14-yuanshen/)
-
-[《游戏摄影》原神](https://fangyuanxiaozhan.com/p/2021-03-12-yuanshen-images/)
-
-[《原神》如何从腾讯游戏口中抢到肉?](https://fangyuanxiaozhan.com/p/2021-03-11-yuanshen/)
-
-[「简书营销号」是非常邪门的黑色幽默，也就比百度莆田系好了那么一丢丢……](https://fangyuanxiaozhan.com/p/2021-03-07-jianshu/)
-
-[重看经典动漫《火影忍者》的一些感受](https://fangyuanxiaozhan.com/p/2021-03-06-huoying/)
-
-[计算机本科生从业金融两年的经验](https://fangyuanxiaozhan.com/p/2021-03-04-15/)
-
-[macOS刷机后，分享一波必装软件](https://fangyuanxiaozhan.com/p/2021-02-22-mac-soft/)
-
-[《刺杀小说家》一个勇士屠恶龙救苍生的故事](https://fangyuanxiaozhan.com/p/2021-02-17-xiaoshuojia/)
-
-[衡水的中学为高考服务，996.icu为人民企业家服务](https://fangyuanxiaozhan.com/p/2021-01-29-20/)
-
-[轻薄的代价（纪念不足两岁MacBook轻薄本的陨落）](https://fangyuanxiaozhan.com/p/2021-01-28-09/)
-
-[PP鸭最佳替代品！《图压》批量压缩图片而不损失画质，支持JPG,PNG,GIF,SVG](https://fangyuanxiaozhan.com/p/2021-01-26-13/)
-
-[解决Chrome开发中http强制跳转https](https://fangyuanxiaozhan.com/p/2021-01-25-24/)
-
-[Node.js爬虫获取漫威超级英雄电影海报](https://fangyuanxiaozhan.com/p/2021-01-25-23/)
-
-[InDesign转曲字体 导出PDF的技巧](https://fangyuanxiaozhan.com/p/2021-01-25-22/)
-
-[Python写给前端的脚本！网站图片素材中文转英文](https://fangyuanxiaozhan.com/p/2020-01-25-21/)
-
-[B站黑白滤镜](https://fangyuanxiaozhan.com/p/2020-01-25-20/)
-
-[简单三步, 搭建全平台私有同步网盘](https://fangyuanxiaozhan.com/p/2020-01-25-19/)
-
-[让Css3动画变得有趣WOWjs](https://fangyuanxiaozhan.com/p/2020-01-25-18/)
-
-[193MB的 Office 2016 四合一精简珍藏版，支持 win7 win8 win8.1 win10 x86/x64 系统](https://fangyuanxiaozhan.com/p/2020-01-24-office2016/)
-
-[使用Github Actions 动态更新Github主页](https://fangyuanxiaozhan.com/p/2020-01-23-15-github-actions-blog/)
-
-[《百度网盘闲时下载卡》别家公司996, 我百度凌晨1点刚上线，如何改进闲时下载卡？Make Baidu Great Again！](https://fangyuanxiaozhan.com/p/2020-01-21-13-baidupan/)
-
-[从「我的代码要改变世界」到「代码也不是最重要滴」](https://fangyuanxiaozhan.com/p/2020-01-20-code/)
-
-[用Github Actions运行Python脚本更新仓库博客到WordPress，手机写Markdown同步更新到Github和WordPress攻略](https://fangyuanxiaozhan.com/p/2020-01-19-18-00-wordpressxmlrpctools/)
-
-[Xbox 2020 series手柄体验实录（附自制Xbox体感射击技巧）](https://fangyuanxiaozhan.com/p/2020-01-19-08-00-xbox-2020-series/)
-
-[建立个人独立博客有什么好处?](https://fangyuanxiaozhan.com/p/2020-01-18-blog/)
-
-[zhaoolee的Github主页](https://fangyuanxiaozhan.com/p/2020-01-17-zhaoolee/)
+[zhaoolee的Github主页](https://yanghong.tinyweb.blog/p/2020-01-17-zhaoolee/)
 
 ---end---
 
