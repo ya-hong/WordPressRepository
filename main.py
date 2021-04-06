@@ -44,7 +44,10 @@ url_info = urlparse(xmlrpc_php)
 
 domain_name = url_info.netloc
 
-wp = Client(xmlrpc_php, username, password)
+class SpecialTransport(Transport):
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+
+wp = Client(xmlrpc_php, username, password, transport=SpecialTransport())
 
 # 获取已发布文章id列表
 def get_posts():
