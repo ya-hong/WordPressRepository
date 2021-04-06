@@ -17,6 +17,7 @@ jobs:
           pip install markdown
           pip install python-wordpress-xmlrpc
           pip install python-frontmatter
+          pip install python-markdown-math
       - name: Build
         env:
             USERNAME: ${{ secrets.USERNAME }}
