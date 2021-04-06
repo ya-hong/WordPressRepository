@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   push:
-      runs-on: centos-7
+      runs-on: centos 
       steps:
       - uses: actions/checkout@v2 # Checking out the repo
       - name: Install dependecies
