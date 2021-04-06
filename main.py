@@ -272,8 +272,8 @@ def main():
                 extensions=[
                     'tables', 
                     'fenced_code', 
+                    MathEscapeExtension(delimiters="dollers")
                 ],
-                MathEscapeExtension(delimiters="dollers")
             )
             # 如果文章无id,则直接新建
             if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
