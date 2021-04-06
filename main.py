@@ -50,7 +50,7 @@ from xmlrpc.client import SafeTransport
 class SpecialTransport(SafeTransport):
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
 
-wp = Client(xmlrpc_php, username, password, transport=SpecialTransport())
+wp = Client(xmlrpc_php, username, password)
 
 # 获取已发布文章id列表
 def get_posts():
