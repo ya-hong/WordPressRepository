@@ -6,36 +6,30 @@ on:
 jobs:
   push:
       runs-on: ubuntu-latest
+
+
+
       steps:
       - uses: actions/checkout@v2 # Checking out the repo
-      - name: Install pipenv, libpq, and pandoc
+
+      - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+      
+
+      - name: Install dependencies
         run: |
-          sudo apt-get install libpq-dev -y
-          pip install pipenv
-      - name: Cache pip
-        uses: actions/cache@v2
-        with:
-          # This path is specific to Ubuntu
-          path: ~/.cache/pip
-          # Look to see if there is a cache hit for the corresponding requirements file
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
-      - name: Install dependecies
-        run: |
-          pipenv install -d
-        # uses: VaultVulp/action-pipenv@v2.0.1
-        # with:
-        #   command: install -d # Install all dependencies, including development ones
+          python -m pip install -p Pipfile.lock
+      
       - name: Build
         env:
             USERNAME: ${{ secrets.USERNAME }}
             PASSWORD: ${{ secrets.PASSWORD }}
             XMLRPC_PHP: ${{ secrets.XMLRPC_PHP }}
-        uses: VaultVulp/action-pipenv@v2.0.1
-        with:
-          command: run build
+        run: |
+          python main.py
+
       - name: Commit and push if changed   # 将.md_sha1 README.md 更新到仓库
         run: |
           git diff
@@ -44,3 +38,26 @@ jobs:
           git add .md_sha1 README.md
           git commit -m "Github Action auto Updated"
           git push
+
+
+
+      # - name: Install dependecies
+      #   uses: VaultVulp/action-pipenv@v2.0.1
+      #   with:
+      #     command: install -d # Install all dependencies, including development ones
+      # - name: Build
+      #   env:
+      #       USERNAME: ${{ secrets.USERNAME }}
+      #       PASSWORD: ${{ secrets.PASSWORD }}
+      #       XMLRPC_PHP: ${{ secrets.XMLRPC_PHP }}
+      #   uses: VaultVulp/action-pipenv@v2.0.1
+      #   with:
+      #     command: run build
+      # - name: Commit and push if changed   # 将.md_sha1 README.md 更新到仓库
+      #   run: |
+      #     git diff
+      #     git config --global user.email "yanghong1484944458@gmail.com"
+      #     git config --global user.name "yanghong"
+      #     git add .md_sha1 README.md
+      #     git commit -m "Github Action auto Updated"
+      #     git push
