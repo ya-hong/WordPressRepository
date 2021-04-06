@@ -8,6 +8,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2 # Checking out the repo
+      - name: Install pipenv, libpq, and pandoc
+        run: |
+          sudo apt-get install libpq-dev -y
+          pip install pipenv
       - name: Cache pip
         uses: actions/cache@v2
         with:
@@ -19,9 +23,11 @@ jobs:
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
       - name: Install dependecies
-        uses: VaultVulp/action-pipenv@v2.0.1
-        with:
-          command: install -d # Install all dependencies, including development ones
+        run: |
+          pipenv install -d
+        # uses: VaultVulp/action-pipenv@v2.0.1
+        # with:
+        #   command: install -d # Install all dependencies, including development ones
       - name: Build
         env:
             USERNAME: ${{ secrets.USERNAME }}
