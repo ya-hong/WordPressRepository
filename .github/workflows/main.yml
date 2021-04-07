@@ -24,7 +24,11 @@ jobs:
             PASSWORD: ${{ secrets.PASSWORD }}
             XMLRPC_PHP: ${{ secrets.XMLRPC_PHP }}
         run: |
+<<<<<<< HEAD
           python .github/workflows/main.py
+=======
+          python github/workflows/main.py
+>>>>>>> 3126798d8e7286d4edebe5216d94cb8e52bdaedc
       - name: Commit and push if changed   # 将.md_sha1 README.md 更新到仓库
         run: |
           git diff
