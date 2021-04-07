@@ -30,7 +30,7 @@ jobs:
           git diff
           git config --global user.email "yanghong1484944458@gmail.com"
           git config --global user.name "yanghong"
-          git add .md_sha1 README.md
+          git add .github/workflows/.md_sha1
           git commit -m "Github Action auto Updated"
           git push
 
