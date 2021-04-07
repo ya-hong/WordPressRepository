@@ -237,7 +237,7 @@ def main():
     # 查看目录下是否存在md_sha1.txt,如果存在则读取内容；
     # 如果不存在则创建md_sha1.txt,内容初始化为{}，并读取其中的内容；
     # 将读取的字典内容变量名，设置为 md_sha1_dic
-    md_sha1_dic = get_md_sha1_dic(os.path.join(os.getcwd(), ".github/workflows/.md_sha1"))
+    md_sha1_dic = get_md_sha1_dic(os.path.join(os.getcwd(), ".github/.md_sha1"))
 
     # 3. 开始同步
     # 读取_posts目录中的md文件列表
@@ -278,7 +278,7 @@ def main():
                 id = link_id_dic["https://"+domain_name+"/p/"+link+"/"]
                 edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category)
     # 4. 重建md_sha1_dic
-    rebuild_md_sha1_dic(os.path.join(os.getcwd(), ".github/workflows/.md_sha1"), os.path.join(os.getcwd(), "_posts"))
+    rebuild_md_sha1_dic(os.path.join(os.getcwd(), ".github/.md_sha1"), os.path.join(os.getcwd(), "_posts"))
     # 5. 将链接信息写入insert_index_info_in_readme
     # insert_index_info_in_readme()
 
