@@ -46,12 +46,6 @@ url_info = urlparse(xmlrpc_php)
 
 domain_name = url_info.netloc
 
-from xmlrpc.client import SafeTransport
-
-
-class SpecialTransport(SafeTransport):
-    user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
-
 wp = Client(xmlrpc_php, username, password)
 
 # 获取已发布文章id列表
@@ -83,7 +77,6 @@ def create_post_obj(title, content, link, post_status, terms_names_post_tag, ter
          #文章所属分类，没有则自动创建
         'category': terms_names_category
     }
-
     return post_obj
 
 
